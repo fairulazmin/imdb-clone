@@ -1,6 +1,7 @@
 import { ReactNode } from 'react'
 import './globals.css'
 import Header from './header'
+import Providers from './porviders'
 
 export const metadata = {
   title: 'Create Next App',
@@ -8,19 +9,21 @@ export const metadata = {
 }
 
 type Children = {
-  children: React.ReactNode
+  children: ReactNode
 }
 
 const RootLayout = ({ children }: Children) => {
   return (
     <html lang='en'>
       <body>
-        {/* Header */}
-        <Header />
-        {/* Navbar */}
-        {/* Searchbox */}
+        <Providers>
+          {/* Header */}
+          <Header />
+          {/* Navbar */}
+          {/* Searchbox */}
 
-        {children}
+          {children}
+        </Providers>
       </body>
     </html>
   )

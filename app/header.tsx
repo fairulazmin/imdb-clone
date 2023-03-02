@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import DarkModeSwitch from './darkModeSwitch'
 import MenuItems from './menuItems'
 
 const Header = () => {
@@ -8,8 +9,9 @@ const Header = () => {
         <div>
           <MenuItems />
         </div>
-        <div>
-          <Link href='/' className='space-x-2 mx-4 lg:mx-6'>
+        <div className='flex items-center space-x-2 mx-4 lg:mx-6'>
+          <DarkModeSwitch />
+          <Link href='/' className='space-x-2 '>
             <span className='font-bold bg-amber-500 py-1 px-2 rounded-lg'>
               IMDb
             </span>

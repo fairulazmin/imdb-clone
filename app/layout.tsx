@@ -1,7 +1,8 @@
 import { ReactNode } from 'react'
 import './globals.css'
 import Header from './header'
-import Providers from './porviders'
+import Navbar from './navbar'
+import Providers from './providers'
 
 export const metadata = {
   title: 'Create Next App',
@@ -17,9 +18,8 @@ const RootLayout = ({ children }: Children) => {
     <html lang='en'>
       <body>
         <Providers>
-          {/* Header */}
           <Header />
-          {/* Navbar */}
+          <Navbar />
           {/* Searchbox */}
 
           {children}

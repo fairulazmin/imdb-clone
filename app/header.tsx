@@ -4,7 +4,7 @@ import MenuItems from './menuItems'
 
 const Header = () => {
   return (
-    <div className='bg-gray-300'>
+    <div>
       <div className='flex justify-between max-w-6xl mx-auto items-center py-6'>
         <div>
           <MenuItems />

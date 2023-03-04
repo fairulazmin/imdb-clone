@@ -17,13 +17,13 @@ const DarkModeSwitch = () => {
   return (
     <>
       {mounted && currTheme === 'light' && (
-        <MdLightMode
+        <BsFillMoonFill
           className='text-xl cursor-pointer hover:text-amber-500'
           onClick={() => setTheme('dark')}
         />
       )}
       {mounted && currTheme === 'dark' && (
-        <BsFillMoonFill
+        <MdLightMode
           className='text-xl cursor-pointer hover:text-amber-500'
           onClick={() => setTheme('light')}
         />

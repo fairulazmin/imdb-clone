@@ -1,33 +1,33 @@
-import Results from './results'
+import SearchResults from './results'
 const API_KEY = process.env.API_KEY
 
 type Data = {
-  // data: {
-    page: number
-    results: DataResults[]
-    total_pages: number
-    total_results: number
-  // }
+  page: number
+  results: Results[]
+  total_pages: number
+  total_results: number
 }
 
-export type DataResults = {
+export type Results = {
   adult: boolean
   backdrop_path: string
-  id: number
-  name: string
-  title: string
-  original_language: string
-  original_title: string
-  original_name: string
-  overview: string
-  poster_path: string
-  media_type: string
   genre_ids: number[]
+  id: number
+  name?: string
+  original_language: string
+  original_title?: string
+  original_name?: string
+  overview: string
   popularity: number
-  first_air_date: string
+  poster_path: string
+  media_type?: string
+  release_date?: string
+  title?: string
+  video?: boolean
+  first_air_date?: string
   vote_average: number
   vote_count: number
-  origin_country: string[]
+  origin_country?: string[]
 }
 
 type SearchParams = {
@@ -51,11 +51,11 @@ const Home = async ({ searchParams }: SearchParams) => {
     throw new Error('Failed to fetch data')
   }
   const data: Data = await res.json()
-  const results: DataResults[] = data.results
+  const results: Results[] = data.results
 
   return (
     <div>
-      <Results results={results} />
+      <SearchResults results={results} />
     </div>
   )
 }

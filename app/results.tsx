@@ -1,6 +1,10 @@
-import { DataResults } from "./page"
+import { Results } from './page'
 
-const Results = ({ results }: DataResults[]) => {
+type Wrapper = {
+  results: Results[]
+}
+
+const SearchResults = ({ results }: Wrapper) => {
   return (
     <div>
       {results.map((result) => (
@@ -10,4 +14,4 @@ const Results = ({ results }: DataResults[]) => {
   )
 }
 
-export default Results
+export default SearchResults

@@ -1,10 +1,6 @@
 import { Results } from './page'
 
-type Wrapper = {
-  results: Results[]
-}
-
-const SearchResults = ({ results }: Wrapper) => {
+const SearchResults = ({ results }: { results: Results[] }) => {
   return (
     <div>
       {results.map((result) => (

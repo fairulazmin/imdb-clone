@@ -16,7 +16,6 @@ const MoviePage = async ({
 
   const movie = await res.json()
   const {
-    // id,
     backdrop_path: backdrop,
     poster_path: poster,
     original_title,

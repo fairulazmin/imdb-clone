@@ -1,4 +1,4 @@
-import SearchResults from './results'
+import SearchResults from '@/components/results'
 const API_KEY = process.env.API_KEY
 
 type Data = {

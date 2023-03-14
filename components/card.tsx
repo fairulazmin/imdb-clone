@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import { Results } from './page'
+import { Results } from '@/app/page'
 import { FiThumbsUp } from 'react-icons/fi'
 
 const Card = ({ result }: { result: Results }) => {

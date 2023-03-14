@@ -1,4 +1,4 @@
-import { Results } from './page'
+import { Results } from '@/app/page'
 import Card from './card'
 
 const SearchResults = ({ results }: { results: Results[] }) => {

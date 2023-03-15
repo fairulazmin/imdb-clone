@@ -5,13 +5,13 @@ Learn from [Next js 13 project - IMDB Clone - next js tailwind css project - nex
 
 ### Screenshot
 
-[img](public/start_page.png)
+![img](public/start_page.png)
 
-[img](public/movie_page.png)
+![img](public/movie_page.png)
 
 ## Getting Started
 
-First get API KEY from [TMDB](https://www.themoviedb.org/)
+First, get API KEY from [TMDB](https://www.themoviedb.org/)
 
 Create local config file `touch .env.local`
 
